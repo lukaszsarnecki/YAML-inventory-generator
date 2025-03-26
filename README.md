@@ -2,12 +2,11 @@
 
 Przedstawiam interaktywny skrypt w Bash, który dynamicznie tworzy plik `inventory.yml` dla Ansible. Dzięki niemu w kilku prostych krokach możesz zautomatyzować konfigurację hostów – wystarczy, że podasz liczbę hostów oraz ich dane (nazwa, adres IP, użytkownik). Idealne narzędzie dla pasjonatów DevOps oraz administratorów systemów. Zachęcam do zapoznania się z repozytorium, komentowania i udostępniania!
 
-### Działanie:
-
-Po uruchomieniu użytkownik podaje liczbę hostów, a następnie wprowadza dane dla każdego z nich:
-- Nazwa hosta
-- Adres IP hosta (ansible_host)
-- Nazwa użytkownika (ansible_user)
+### Funkcjonalności
+- Interaktywne pobieranie liczby hostów do dodania.
+- Zbieranie informacji: nazwa hosta, adres IP (ansible_host), nazwa użytkownika (ansible_user).
+- Tworzenie pliku `inventory.yml` z odpowiednią strukturą YAML.
+- Weryfikacja istnienia pliku i opcja nadpisania istniejącej konfiguracji.
 
 ### Sposób użycia:
  1. Nadaj uprawnienia wykonywania:chmod +x create_inventory_pl.sh
