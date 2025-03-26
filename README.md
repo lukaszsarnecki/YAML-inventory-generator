@@ -57,6 +57,7 @@ if [ -f "inventory.yml" ]; then
 fi
 
 # Tworzenie podstawowej struktury pliku YAML
+echo "--- # Inwentory YML" > inventory.yml
 echo "all:" > inventory.yml
 echo "  hosts:" >> inventory.yml
 
@@ -132,6 +133,7 @@ if [ -f "inventory.yml" ]; then
 fi
 
 # Create the basic YAML structure for the inventory file
+echo "--- # Inventory YML" > inventory.yml
 echo "all:" > inventory.yml
 echo "  hosts:" >> inventory.yml
 
