@@ -57,8 +57,8 @@ if [ -f "inventory.yml" ]; then
 fi
 
 # Tworzenie podstawowej struktury pliku YAML
-echo "--- # Inwentory YML" > inventory.yml
-echo "all:" > inventory.yml
+echo "--- #Inwentory YML" >> inventory.yml
+echo "all:" >> inventory.yml
 echo "  hosts:" >> inventory.yml
 
 # Pętla zbierająca dane o hostach
@@ -71,8 +71,8 @@ do
 
     # Dodanie danych hosta do pliku inventory.yml
     echo "    $host_name:" >> inventory.yml
-    echo "      ansible_host: $host_ip" >> inventory.yml
     echo "      ansible_user: $host_user" >> inventory.yml
+    echo "      ansible_host: $host_ip" >> inventory.yml
     echo "" >> inventory.yml
 done
 
@@ -133,8 +133,8 @@ if [ -f "inventory.yml" ]; then
 fi
 
 # Create the basic YAML structure for the inventory file
-echo "--- # Inventory YML" > inventory.yml
-echo "all:" > inventory.yml
+echo "--- #Inventory YML" >> inventory.yml
+echo "all:" >> inventory.yml
 echo "  hosts:" >> inventory.yml
 
 # Loop to gather host information
@@ -147,8 +147,8 @@ do
 
     # Append host details to the inventory.yml file
     echo "    $host_name:" >> inventory.yml
-    echo "      ansible_host: $host_ip" >> inventory.yml
     echo "      ansible_user: $host_user" >> inventory.yml
+    echo "      ansible_host: $host_ip" >> inventory.yml
     echo "" >> inventory.yml
 done
 
